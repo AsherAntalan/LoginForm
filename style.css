@@ -1,0 +1,127 @@
+body {
+  background-image: url("ey.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  height: 100vh;
+  margin: 0;
+}
+
+/*container center*/
+.container{
+  box-shadow: 0 4vh 6vh rgba(0, 0, 0, 0.10),0 8vh 20vh rgba(0, 0, 0, 1),0 12vh 40vh rgba(0, 0, 0, 5),0 16vh 80vh rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
+  width: 50vh;
+  height: 60vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+/*items holder*/
+.holder{
+  padding: 3vh;
+}
+
+/*email and password placeholder input*/
+input{
+  margin: 1vh;
+  height: 5vh;
+  color: rgb(98, 96, 97);
+  font-size: -1rem;
+  font-style: italic;
+  background-color: rgb(225, 223, 223);
+  outline: none;
+  border: none;
+  padding-left: 40px; 
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+}
+
+#email {
+  background-image: url("Sample_User_Icon.png");
+}
+
+#password {
+  background-image: url("password-148.png");
+}
+
+
+#r_password {
+  background-image: url("password-148.png");
+}
+
+
+/*div holding the placeholders*/
+.in{
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/*text*/
+h1,h3,a{
+  text-align: center;
+}
+
+/*text*/
+h1{
+  margin-top: .5vh;
+  font-family: Arial Black; 
+  font-size: 5vh;
+  animation: floatText 1.5s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/*text*/
+h3{
+  
+  margin-top: 4vh;
+  font-family:"Book Antiqua";
+  font-style: italic;
+  font-size: small;
+}
+
+button {
+  margin-top: -0.5vh;
+  margin-left: 1vh;
+  width: 95.8%;
+  height: 6vh;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+hr{
+  width: 95.8%;
+  margin-top: -.9vh;
+  border-top: .5vh solid rgb(0, 0, 0);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
